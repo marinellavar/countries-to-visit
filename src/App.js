@@ -49,7 +49,7 @@ function App() {
       </div>
       
       <div className='container'>
-        <p>{showMore ? description : description.substring(0,215)+ "..."}
+        <p className='description'>{showMore ? description : description.substring(0,215)+ "..."}
         <button className='showmore'  onClick={() =>setShowMore(!showMore)}>{!showMore ?"Show more" : "Show less" }</button>
         </p>
       </div>
@@ -61,7 +61,7 @@ function App() {
       
       <div className='btn container'>
         <button className='btn prevNext' onClick={previousCountry}>Previous</button>
-        <button className='btn prevNext' onClick={nextCountry}>Next</button>
+        <button className='btn prevNext next' onClick={nextCountry}>Next</button>
 
       </div>
 

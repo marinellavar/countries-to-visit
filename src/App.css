@@ -63,6 +63,42 @@ button {
   border: 1px solid white;
 }
 
+.next{
+  width: 60px;
+}
+
 .showmore{
   color: #3B3486;
 }
+
+
+
+
+@media(max-width: 500px){
+  h1 {
+
+    letter-spacing: 1px;
+  
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .description{
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+
+  button {
+    font-size: 10px;
+    
+  }
+
+
+  .btn {
+  
+    padding: 5px;
+    
+  }
+  }
