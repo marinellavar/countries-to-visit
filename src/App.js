@@ -6,7 +6,7 @@ import './App.css';
 
 function App() {
   const [countries, setCountries] = useState (0);
-  const [visit,setVisit] = useState(data);
+  
   
   
   
@@ -33,17 +33,8 @@ function App() {
     })
   }
 
-  const removedCountry = (id) =>{
-    let newCountry = visit.filter (visit => visit.id !== id);
-    
-    setVisit(newCountry)
-
-  }
-
-  // {countries.map( element =>{
-  //   const {id, name, description, location, image} = element;
-  // })}
-
+ 
+  
   return (
     <div>
       <div className='container'>
@@ -58,34 +49,22 @@ function App() {
       </div>
       
       <div className='container'>
-        <p>{showMore ? description : description.substring(0,230)+ "..."}
-        <button onClick={() =>setShowMore(!showMore)}>{!showMore ?"Show more" : "Show less" }</button>
+        <p>{showMore ? description : description.substring(0,215)+ "..."}
+        <button className='showmore'  onClick={() =>setShowMore(!showMore)}>{!showMore ?"Show more" : "Show less" }</button>
         </p>
       </div>
 
       <div className='container'>
-        <a href={location}>Location</a>
+        <a className='btn prevNext' href={location}>Location</a>
         
       </div>
       
       <div className='btn container'>
-        <button onClick={previousCountry}>Previous</button>
-        <button onClick={nextCountry}>Next</button>
+        <button className='btn prevNext' onClick={previousCountry}>Previous</button>
+        <button className='btn prevNext' onClick={nextCountry}>Next</button>
 
       </div>
 
-
-      <div className='container'>
-        <button onClick={()=> removedCountry(id)}>Remove</button>
-      </div>
-
-      <div className='container'>
-        <button onClick={() => setVisit([])}>Delete all</button>
-      </div>
-
-      
-
-      
     </div>
   );
 }

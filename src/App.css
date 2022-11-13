@@ -2,6 +2,7 @@
   display: flex;
 
   justify-content: center;
+  background-color: #FBFACD;
 }
 
 
@@ -13,6 +14,8 @@ h1 {
 
   text-transform: uppercase;
 
+  color: #3B3486;
+
 }
 
 h2 {
@@ -23,26 +26,16 @@ h2 {
 
   text-transform: uppercase;
 
-  color: #003b58
-
+  color: #3B3486;
 }
 
 
 button {
-
-  background: none;
-
   border: none;
-
   font-size: 15px;
-
-  color: #0071c2
-
+  background-color: #FBFACD;
+   
 }
-
-
-
-
 
 .btn {
 
@@ -56,11 +49,20 @@ button {
 
   padding: 10px;
 
-  border: 1px solid black;
-
   text-transform: uppercase;
-
 
 }
 
 
+
+.prevNext{
+  background: #BA94D1;
+
+  color: white;
+
+  border: 1px solid white;
+}
+
+.showmore{
+  color: #3B3486;
+}
